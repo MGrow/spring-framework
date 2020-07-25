@@ -7,7 +7,7 @@ public class SpringMasterClassApplication {
 
 	public static void main(String[] args) {
 
-		BinarySearchImpl binarySearch = new BinarySearchImpl();
+		BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSortAlgorithm());
 		int result = binarySearch.binarySearch(new int[] {124, 6}, 3);
 		System.out.println(result);
 
