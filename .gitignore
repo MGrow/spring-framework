@@ -9,3 +9,17 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+.idea/
+
+*.iml
+*.ipr
+
+HELP.md
