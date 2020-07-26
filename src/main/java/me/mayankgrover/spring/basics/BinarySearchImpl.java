@@ -9,9 +9,10 @@ public class BinarySearchImpl {
     @Autowired
     private SortAlgorithm sortAlgo;
 
-    public BinarySearchImpl(SortAlgorithm sortAlgo) {
-        this.sortAlgo = sortAlgo;
-    }
+//    The setter below is optional in this case. Spring uses a setter injection even if there's no setter.
+//    public void setSortAlgo(SortAlgorithm sortAlgo) {
+//        this.sortAlgo = sortAlgo;
+//    }
 
     public int binarySearch(int[] nums, int searchVal) {
 
