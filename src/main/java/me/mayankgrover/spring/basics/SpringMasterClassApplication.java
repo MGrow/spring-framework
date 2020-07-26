@@ -13,9 +13,7 @@ public class SpringMasterClassApplication {
 //	@SpringBootApplication annotation. Otherwise done via @ComponentScan
 
 	public static void main(String[] args) {
-//		BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSortAlgorithm());
 
-//		ApplicationContext
 		ApplicationContext appContext = SpringApplication.run(SpringMasterClassApplication.class, args);
 		BinarySearchImpl binarySearch = appContext.getBean(BinarySearchImpl.class);
 		int result = binarySearch.binarySearch(new int[] {124, 6}, 3);
