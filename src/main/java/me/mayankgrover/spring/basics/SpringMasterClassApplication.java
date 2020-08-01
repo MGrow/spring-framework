@@ -16,7 +16,12 @@ public class SpringMasterClassApplication {
 
 		ApplicationContext appContext = SpringApplication.run(SpringMasterClassApplication.class, args);
 		BinarySearchImpl binarySearch = appContext.getBean(BinarySearchImpl.class);
+		BinarySearchImpl binarySearch1 = appContext.getBean(BinarySearchImpl.class);
 		int result = binarySearch.binarySearch(new int[] {124, 6}, 3);
+
+		// True for singleton (same object is returned)
+		// False for prototype (new object is created with every call)
+		System.out.println(binarySearch == binarySearch1);
 		System.out.println(result);
 
 	}
