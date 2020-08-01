@@ -6,13 +6,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class BinarySearchImpl {
 
-    @Autowired
     private SortAlgorithm sortAlgo;
 
-//    The setter below is optional in this case. Spring uses a setter injection even if there's no setter.
-//    public void setSortAlgo(SortAlgorithm sortAlgo) {
-//        this.sortAlgo = sortAlgo;
-//    }
+    @Autowired
+    public void setSortAlgo(SortAlgorithm sortAlgo) {
+        System.out.println("Hey");
+        this.sortAlgo = sortAlgo;
+    }
 
     public int binarySearch(int[] nums, int searchVal) {
 
