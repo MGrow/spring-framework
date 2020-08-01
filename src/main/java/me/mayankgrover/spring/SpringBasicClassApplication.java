@@ -1,11 +1,12 @@
-package me.mayankgrover.spring.basics;
+package me.mayankgrover.spring;
 
+import me.mayankgrover.spring.basics.BinarySearchImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class SpringMasterClassApplication {
+public class SpringBasicClassApplication {
 
 //	What are the beans? == @Component
 //	What are the dependencies of the bean? == @Autowired
@@ -14,13 +15,11 @@ public class SpringMasterClassApplication {
 
 	public static void main(String[] args) {
 
-		ApplicationContext appContext = SpringApplication.run(SpringMasterClassApplication.class, args);
+		ApplicationContext appContext = SpringApplication.run(SpringBasicClassApplication.class, args);
 		BinarySearchImpl binarySearch = appContext.getBean(BinarySearchImpl.class);
 		BinarySearchImpl binarySearch1 = appContext.getBean(BinarySearchImpl.class);
 		int result = binarySearch.binarySearch(new int[] {124, 6}, 3);
 
-		// True for singleton (same object is returned)
-		// False for prototype (new object is created with every call)
 		System.out.println(binarySearch == binarySearch1);
 		System.out.println(result);
 
