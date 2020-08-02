@@ -1,4 +1,4 @@
-package me.mayankgrover.spring.basics;
+package me.mayankgrover.spring.in28minutes.basics;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;

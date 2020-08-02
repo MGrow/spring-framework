@@ -1,6 +1,6 @@
-package me.mayankgrover.spring;
+package me.mayankgrover.spring.in28minutes;
 
-import me.mayankgrover.spring.basics.BinarySearchImpl;
+import me.mayankgrover.spring.in28minutes.basics.BinarySearchImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

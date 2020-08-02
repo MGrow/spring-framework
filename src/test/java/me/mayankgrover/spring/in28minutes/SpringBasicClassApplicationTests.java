@@ -1,4 +1,4 @@
-package me.mayankgrover.spring;
+package me.mayankgrover.spring.in28minutes;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

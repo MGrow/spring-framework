@@ -1,6 +1,6 @@
-package me.mayankgrover.spring;
+package me.mayankgrover.spring.in28minutes;
 
-import me.mayankgrover.spring.scope.PersonDAO;
+import me.mayankgrover.spring.in28minutes.scope.PersonDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;

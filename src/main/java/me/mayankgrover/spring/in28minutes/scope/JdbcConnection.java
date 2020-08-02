@@ -1,4 +1,4 @@
-package me.mayankgrover.spring.scope;
+package me.mayankgrover.spring.in28minutes.scope;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
