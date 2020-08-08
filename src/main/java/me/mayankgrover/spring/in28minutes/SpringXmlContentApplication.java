@@ -14,6 +14,11 @@ public class SpringXmlContentApplication {
 		try (ClassPathXmlApplicationContext appContext =
 					 new ClassPathXmlApplicationContext("applicationContext.xml")) {
 
+			Object beanDefinitionNames = (Object) appContext.getBeanDefinitionNames();
+
+			LOGGER.info("{}",
+					beanDefinitionNames);
+
 			XmlPersonDAO xmlPersonDAO = appContext.getBean(XmlPersonDAO.class);
 
 			LOGGER.info(String.valueOf(xmlPersonDAO));
